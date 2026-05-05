@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자주 묻는 질문 | 학생인권복지위원회</title>
+    <meta name="description" content="학생인권복지위원회 홈페이지와 신고 절차 관련 자주 묻는 질문" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="faq">
+    <div class="gov-banner">
+      <div class="container gov-banner__inner">
+        <span class="gov-banner__badge">대한민국</span>
+        <p>학생의 존엄과 안전을 함께 지키는 학생인권복지위원회 안내 페이지입니다.</p>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-top">
+        <a class="brand" href="index.html" aria-label="학생인권복지위원회 홈">
+          <span class="brand__mark">인</span>
+          <span class="brand__text">
+            <strong>학생인권복지위원회</strong>
+            <small>Student Rights & Welfare Council</small>
+          </span>
+        </a>
+        <div class="header-actions">
+          <a class="header-link" href="rights.html">이용안내</a>
+          <a class="header-link" href="contact.html">상담문의</a>
+          <a class="header-link header-link--strong" href="https://www.humanrights.go.kr/" target="_blank" rel="noreferrer">외부기관</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="sr-only">메뉴 열기</span>
+          </button>
+        </div>
+      </div>
+      <div class="container nav-wrap">
+        <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
+          <a href="index.html">위원회 소개</a>
+          <a href="report.html">신고 방법</a>
+          <a href="rights.html">학생 권리</a>
+          <a href="faq.html">자주 묻는 질문</a>
+          <a href="contact.html">상담 연락처</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="subpage-main">
+      <section class="subpage-hero">
+        <div class="container subpage-hero__inner">
+          <p class="section-kicker">자주 묻는 질문</p>
+          <h1>많이 물어보는 내용을 한눈에 확인하세요</h1>
+          <p>학생, 보호자, 교직원이 자주 궁금해하는 내용을 정리해 두었습니다.</p>
+        </div>
+      </section>
+
+      <section class="tabs-section">
+        <div class="container tabs-section__inner">
+          <a class="mini-tab" data-page-link="report" href="report.html">인권침해 신고</a>
+          <a class="mini-tab" data-page-link="rights" href="rights.html">학생 권리 안내</a>
+          <a class="mini-tab" data-page-link="faq" href="faq.html">자주 묻는 질문</a>
+          <a class="mini-tab" data-page-link="contact" href="contact.html">상담 연락처</a>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="container">
+          <div class="faq-list">
+            <details open>
+              <summary>이 사이트에서 바로 신고를 접수하나요?</summary>
+              <p>아니요. 이 홈페이지는 안내용이며, 신고 버튼을 누르면 외부 전문 기관 사이트로 이동합니다.</p>
+            </details>
+            <details>
+              <summary>모바일에서도 메뉴 이용이 편한가요?</summary>
+              <p>네. 모바일에서는 탭과 본문이 한 줄씩 정리되고, 상단 메뉴도 햄버거 버튼으로 깔끔하게 정리됩니다.</p>
+            </details>
+            <details>
+              <summary>학교별 공지나 안내 문구를 추가할 수 있나요?</summary>
+              <p>가능합니다. 현재는 정적 HTML 구조라서 각 페이지 파일 안의 문구를 바로 수정해 관리하시면 됩니다.</p>
+            </details>
+            <details>
+              <summary>외부 신고 링크는 어디서 바꾸나요?</summary>
+              <p>각 페이지의 신고 관련 버튼에 들어 있는 `href` 주소를 실제 사용할 신고 기관 링크로 교체하면 됩니다.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div>
+          <strong>학생인권복지위원회</strong>
+          <p>학생의 안전, 존중, 복지를 위한 정보 제공 홈페이지</p>
+        </div>
+        <div class="footer-links">
+          <a href="tel:1588-0000">상담전화 1588-0000</a>
+          <a href="mailto:help@studentrights.or.kr">help@studentrights.or.kr</a>
+          <a href="https://www.humanrights.go.kr/" target="_blank" rel="noreferrer">외부 신고기관 바로가기</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
