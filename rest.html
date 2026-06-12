@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>쉬어가기 | 학생인권복지위원회</title>
+    <meta name="description" content="잠깐 쉬어갈 수 있는 넘블, 2048, 반응속도 미니게임" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="rest">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="학생인권복지위원회 홈"><img class="brand__logo" src="로고_누끼.png" alt="" /><span class="brand__text"><strong>학생인권복지위원회</strong><small>Hanyang Student Rights & Welfare</small></span></a>
+        <nav id="site-nav" class="site-nav" aria-label="주요 메뉴"><a data-page-link="home" href="index.html">홈</a><a data-page-link="report" href="report.html">신고 안내</a><a data-page-link="rights" href="rights.html">학생 권리</a><a data-page-link="faq" href="faq.html">FAQ</a><a data-page-link="contact" href="contact.html">상담 연락처</a><a data-page-link="rest" href="rest.html">쉬어가기</a></nav>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">메뉴 열기</span></button>
+      </div>
+    </header>
+
+    <main class="subpage-main">
+      <section class="page-hero">
+        <div class="container page-hero__inner">
+          <p class="eyebrow">TAKE A BREAK</p>
+          <h1>잠깐 숨 돌리는 쉬어가기</h1>
+          <p>생각이 너무 많을 때는 짧은 게임으로 리듬을 바꿔 보세요.</p>
+        </div>
+      </section>
+
+      <section class="section game-section">
+        <div class="container">
+          <div class="game-tabs" role="tablist" aria-label="미니게임 선택">
+            <button class="game-tab is-active" type="button" data-game-tab="numble">넘블</button>
+            <button class="game-tab" type="button" data-game-tab="twenty48">2048</button>
+            <button class="game-tab" type="button" data-game-tab="reaction">반응속도</button>
+          </div>
+
+          <div class="game-panel is-active" data-game-panel="numble">
+            <div class="game-card">
+              <div class="game-card__head">
+                <div>
+                  <p class="section-kicker">NUMBLE</p>
+                  <h2>세 자리 숫자 맞히기</h2>
+                </div>
+                <button class="button button--small" type="button" id="numble-reset">새 게임</button>
+              </div>
+              <div class="game-help">
+                <strong>게임 방법</strong>
+                <ul>
+                  <li>컴퓨터가 0~9 중에서 서로 다른 숫자 3개로 만든 비밀 번호를 정합니다.</li>
+                  <li>세 자리 숫자를 입력하면 힌트가 나옵니다. S는 숫자와 자리가 모두 맞은 개수, B는 숫자는 맞지만 자리가 다른 개수입니다.</li>
+                  <li>예를 들어 정답이 427일 때 421을 입력하면 2S 0B가 됩니다.</li>
+                  <li>힌트를 보며 범위를 좁혀서 3S를 만들면 성공입니다.</li>
+                </ul>
+              </div>
+              <form class="numble-form" id="numble-form">
+                <input id="numble-input" type="text" inputmode="numeric" maxlength="3" placeholder="예: 427" autocomplete="off" />
+                <button class="button button--primary" type="submit">확인</button>
+              </form>
+              <p class="game-message" id="numble-message">중복 없는 세 자리 숫자를 맞혀 보세요.</p>
+              <div class="guess-list" id="numble-guesses" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <div class="game-panel" data-game-panel="twenty48">
+            <div class="game-card">
+              <div class="game-card__head">
+                <div>
+                  <p class="section-kicker">2048</p>
+                  <h2>같은 숫자를 합쳐 2048 만들기</h2>
+                </div>
+                <div class="score-box"><span>점수</span><strong id="score-2048">0</strong></div>
+                <button class="button button--small" type="button" id="reset-2048">새 게임</button>
+              </div>
+              <div class="game-help">
+                <strong>게임 방법</strong>
+                <ul>
+                  <li>방향키를 누르면(모바일은 게임판을 스와이프) 모든 타일이 그 방향으로 끝까지 밀립니다.</li>
+                  <li>같은 숫자 타일이 부딪히면 하나로 합쳐지며 두 배가 됩니다. 합쳐진 만큼 점수를 얻습니다.</li>
+                  <li>움직일 때마다 새 타일이 하나씩 생깁니다. 칸이 가득 차서 움직일 수 없으면 게임이 끝납니다.</li>
+                  <li>한쪽 구석에 큰 숫자를 모으는 것이 요령입니다. 2048 타일을 만들면 성공!</li>
+                </ul>
+              </div>
+              <div class="board-2048" id="board-2048" aria-label="2048 게임판"></div>
+              <p class="game-message" id="message-2048">방향키나 스와이프로 움직일 수 있습니다.</p>
+            </div>
+          </div>
+
+          <div class="game-panel" data-game-panel="reaction">
+            <div class="game-card">
+              <div class="game-card__head">
+                <div>
+                  <p class="section-kicker">REACTION</p>
+                  <h2>초록색이 되면 바로 누르기</h2>
+                </div>
+                <button class="button button--small" type="button" id="reaction-reset">초기화</button>
+              </div>
+              <div class="game-help">
+                <strong>게임 방법</strong>
+                <ul>
+                  <li>아래 큰 버튼을 누르면 노란색 '기다리기' 상태가 됩니다.</li>
+                  <li>잠시 후 무작위 타이밍에 초록색으로 바뀝니다. 그 순간 최대한 빨리 누르세요.</li>
+                  <li>초록색이 되기 전에 누르면 실패로 처리되어 다시 시작합니다.</li>
+                  <li>기록은 ms(1000분의 1초) 단위로 표시되며, 최고 기록에 도전해 보세요.</li>
+                </ul>
+              </div>
+              <button class="reaction-pad" type="button" id="reaction-pad">시작</button>
+              <p class="game-message" id="reaction-message">버튼을 누르면 준비가 시작됩니다.</p>
+              <div class="reaction-records">
+                <span>최근 기록 <strong id="reaction-last">-</strong></span>
+                <span>최고 기록 <strong id="reaction-best">-</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <div class="footer-brand"><img src="로고_누끼.png" alt="" /><div><strong>학생인권복지위원회</strong><p>한양대학교 학생의 안전, 존중, 복지를 위한 안내 창구</p></div></div>
+        <div class="footer-links"><a href="tel:010-7938-1870">010-7938-1870</a><a href="mailto:hyustudentscare@gmail.com">hyustudentscare@gmail.com</a><a href="https://walla.my/v/a8oq6hDiddJU0hvot35J" target="_blank" rel="noreferrer">신고하기</a></div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

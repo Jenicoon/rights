@@ -3,100 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>상담 연락처 | 한양대학교 학생인권복지위원회</title>
-    <meta name="description" content="학생인권 관련 상담 연락처와 문의 방법 안내" />
+    <title>상담 연락처 | 학생인권복지위원회</title>
+    <meta name="description" content="학생인권복지위원회 상담 연락처와 외부 기관 연결" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="contact">
-    <div class="gov-banner">
-      <div class="container gov-banner__inner">
-        <span class="gov-banner__badge">한양대학교</span>
-        <p>학생의 존엄과 안전을 함께 지키는 한양대학교 학생인권복지위원회 안내 페이지입니다.</p>
-      </div>
-    </div>
-
     <header class="site-header">
-      <div class="container header-top">
-        <a class="brand" href="index.html" aria-label="한양대학교 학생인권복지위원회 홈">
-          <span class="brand__mark">인</span>
-          <span class="brand__text">
-            <strong>학생인권복지위원회</strong>
-            <small>Student Rights & Welfare Council</small>
-          </span>
-        </a>
-        <div class="header-actions">
-          <a class="header-link" href="rights.html">이용안내</a>
-          <a class="header-link" href="contact.html">상담문의</a>
-          <a class="header-link header-link--strong" href="https://hrc.hanyang.ac.kr/" target="_blank" rel="noreferrer">외부기관</a>
-          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="sr-only">메뉴 열기</span>
-          </button>
-        </div>
-      </div>
-      <div class="container nav-wrap">
-        <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
-          <a href="index.html">위원회 소개</a>
-          <a href="report.html">신고 방법</a>
-          <a href="rights.html">학생 권리</a>
-          <a href="faq.html">자주 묻는 질문</a>
-          <a href="contact.html">상담 연락처</a>
-        </nav>
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="학생인권복지위원회 홈"><img class="brand__logo" src="로고_누끼.png" alt="" /><span class="brand__text"><strong>학생인권복지위원회</strong><small>Hanyang Student Rights & Welfare</small></span></a>
+        <nav id="site-nav" class="site-nav" aria-label="주요 메뉴"><a data-page-link="home" href="index.html">홈</a><a data-page-link="report" href="report.html">신고 안내</a><a data-page-link="rights" href="rights.html">학생 권리</a><a data-page-link="faq" href="faq.html">FAQ</a><a data-page-link="contact" href="contact.html">상담 연락처</a><a data-page-link="rest" href="rest.html">쉬어가기</a></nav>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">메뉴 열기</span></button>
       </div>
     </header>
 
     <main class="subpage-main">
-      <section class="subpage-hero">
-        <div class="container subpage-hero__inner">
-          <p class="section-kicker">상담 연락처</p>
-          <h1>필요한 도움을 요청할 수 있는 창구를 정리했습니다</h1>
-          <p>전화, 이메일, 운영 시간 등 실제 안내 정보를 이 페이지에서 관리하면 됩니다.</p>
+      <section class="page-hero">
+        <div class="container page-hero__inner">
+          <p class="eyebrow">CONTACT</p>
+          <h1>혼자 정리하기 어렵다면 먼저 연락해 주세요</h1>
+          <p>
+            상황 설명이 완벽하지 않아도 괜찮습니다.<br />
+            필요한 절차와 연결 가능 기관을 함께 확인합니다.
+          </p>
         </div>
       </section>
 
-      <section class="tabs-section">
-        <div class="container tabs-section__inner">
-          <a class="mini-tab" data-page-link="report" href="report.html">인권침해 신고</a>
-          <a class="mini-tab" data-page-link="rights" href="rights.html">학생 권리 안내</a>
-          <a class="mini-tab" data-page-link="faq" href="faq.html">자주 묻는 질문</a>
-          <a class="mini-tab" data-page-link="contact" href="contact.html">상담 연락처</a>
-        </div>
-      </section>
-
-      <section class="info-section">
-        <div class="container contact-grid">
-          <article class="info-panel">
-            <p class="section-kicker">대표 연락처</p>
-            <h2>상담 문의</h2>
-            <div class="contact-card-list">
-              <div class="contact-card">
-                <strong>전화 상담</strong>
-                <p>010-7938-1870</p>
-                <span>평일 09:00 - 18:00</span>
-              </div>
-              <div class="contact-card">
-                <strong>이메일 문의</strong>
-                <p>hyustudentscare@gmail.com</p>
-                <span>접수 후 순차 회신</span>
-              </div>
-            </div>
+      <section class="section">
+        <div class="container info-grid">
+          <article class="contact-card">
+            <span>전화</span>
+            <h2><a href="tel:010-7938-1870">010-7938-1870</a></h2>
+            <p>빠른 상담이나 접수 전 문의가 필요할 때 이용하세요.</p>
           </article>
+          <article class="contact-card">
+            <span>이메일</span>
+            <h2><a href="mailto:hyustudentscare@gmail.com">hyustudentscare@gmail.com</a></h2>
+            <p>자료를 첨부하거나 상황을 글로 정리해 전달할 수 있습니다.</p>
+          </article>
+          <article class="contact-card">
+            <span>신고 접수</span>
+            <h2><a href="https://walla.my/v/a8oq6hDiddJU0hvot35J" target="_blank" rel="noreferrer">Walla 접수 페이지</a></h2>
+            <p>학생인권복지위원회로 바로 신고 내용을 전달합니다.</p>
+          </article>
+          <article class="contact-card">
+            <span>외부 기관</span>
+            <h2><a href="https://hrc.hanyang.ac.kr/" target="_blank" rel="noreferrer">한양대학교 인권센터</a></h2>
+            <p>교내 전문 절차와 지원 안내를 확인할 수 있습니다.</p>
+          </article>
+        </div>
+      </section>
 
-          <article class="info-panel info-panel--soft">
-            <p class="section-kicker">안내 사항</p>
-            <h2>문의 전 참고해 주세요</h2>
+      <section class="section section--tight">
+        <div class="container">
+          <p class="section-kicker">GUIDE</p>
+          <h2 class="section-title">어떤 채널이 좋을까요</h2>
+          <div class="feature-grid">
+            <article>
+              <span>01</span>
+              <h3>지금 바로 묻고 싶다면</h3>
+              <p>전화가 가장 빠릅니다. 접수 전 간단한 확인도 좋습니다.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>자료와 함께 정리하려면</h3>
+              <p>이메일로 캡처, 사진 등 자료를 첨부해 전달하세요.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>기록을 남기며 접수하려면</h3>
+              <p>Walla 접수 페이지에서 양식에 따라 작성하면 됩니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container info-grid">
+          <article class="info-panel">
+            <p class="section-kicker">TIP</p>
+            <h2>연락 전에 가볍게 메모해 보세요</h2>
             <ul class="plain-list">
-              <li>긴급한 위험 상황은 즉시 보호자, 학교, 경찰 등 가까운 도움 기관에 연락하세요.</li>
-              <li>상담 시 사건 개요를 간단히 정리해 두면 더 빠른 안내를 받을 수 있습니다.</li>
-              <li>실제 운영 시간과 담당 부서 정보는 학교 또는 기관 상황에 맞게 수정해 사용하세요.</li>
+              <li>언제, 어디에서 있었던 일인지</li>
+              <li>어떤 점이 가장 불편하거나 힘들었는지</li>
+              <li>지금 가장 필요한 도움이 무엇인지</li>
+              <li>남아 있는 자료가 있는지</li>
+            </ul>
+          </article>
+          <article class="info-panel info-panel--soft">
+            <p class="section-kicker">EMERGENCY</p>
+            <h2>긴급한 상황이라면</h2>
+            <ul class="plain-list">
+              <li>112 — 경찰 긴급 신고</li>
+              <li>1366 — 여성긴급전화 (24시간)</li>
+              <li>1388 — 청소년 상담 전화</li>
+              <li>즉각적인 위험이 있다면 안전한 장소로 먼저 이동하세요.</li>
             </ul>
           </article>
         </div>
@@ -105,18 +108,10 @@
 
     <footer class="site-footer">
       <div class="container footer-layout">
-        <div>
-          <strong>학생인권복지위원회</strong>
-          <p>학생의 안전, 존중, 복지를 위한 정보 제공 홈페이지</p>
-        </div>
-        <div class="footer-links">
-          <a href="tel:010-7938-1870">상담전화 010-7938-1870</a>
-          <a href="mailto:hyustudentscare@gmail.com">hyustudentscare@gmail.com</a>
-          <a href="https://hrc.hanyang.ac.kr/" target="_blank" rel="noreferrer">외부 신고기관 바로가기</a>
-        </div>
+        <div class="footer-brand"><img src="로고_누끼.png" alt="" /><div><strong>학생인권복지위원회</strong><p>한양대학교 학생의 안전, 존중, 복지를 위한 안내 창구</p></div></div>
+        <div class="footer-links"><a href="tel:010-7938-1870">010-7938-1870</a><a href="mailto:hyustudentscare@gmail.com">hyustudentscare@gmail.com</a><a href="https://walla.my/v/a8oq6hDiddJU0hvot35J" target="_blank" rel="noreferrer">신고하기</a></div>
       </div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>

@@ -3,127 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>인권침해 신고 | 학생인권복지위원회</title>
-    <meta name="description" content="학생인권 침해 신고 절차와 외부 신고 연결 안내" />
+    <title>신고 안내 | 학생인권복지위원회</title>
+    <meta name="description" content="학생인권복지위원회 신고 접수 방법과 준비 사항 안내" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="report">
-    <div class="gov-banner">
-      <div class="container gov-banner__inner">
-        <span class="gov-banner__badge">대한민국</span>
-        <p>학생의 존엄과 안전을 함께 지키는 학생인권복지위원회 안내 페이지입니다.</p>
-      </div>
-    </div>
-
     <header class="site-header">
-      <div class="container header-top">
+      <div class="container header-inner">
         <a class="brand" href="index.html" aria-label="학생인권복지위원회 홈">
-          <span class="brand__mark">인</span>
-          <span class="brand__text">
-            <strong>한양대학교 학생인권복지위원회</strong>
-            <small>Student Rights & Welfare Council</small>
-          </span>
+          <img class="brand__logo" src="로고_누끼.png" alt="" />
+          <span class="brand__text"><strong>학생인권복지위원회</strong><small>Hanyang Student Rights & Welfare</small></span>
         </a>
-        <div class="header-actions">
-          <a class="header-link" href="rights.html">이용안내</a>
-          <a class="header-link" href="contact.html">상담문의</a>
-          <a class="header-link header-link--strong" href="https://hrc.hanyang.ac.kr/" target="_blank" rel="noreferrer">외부기관</a>
-          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="sr-only">메뉴 열기</span>
-          </button>
-        </div>
-      </div>
-      <div class="container nav-wrap">
         <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
-          <a href="index.html">위원회 소개</a>
-          <a href="report.html">신고 방법</a>
-          <a href="rights.html">학생 권리</a>
-          <a href="faq.html">자주 묻는 질문</a>
-          <a href="contact.html">상담 연락처</a>
+          <a data-page-link="home" href="index.html">홈</a>
+          <a data-page-link="report" href="report.html">신고 안내</a>
+          <a data-page-link="rights" href="rights.html">학생 권리</a>
+          <a data-page-link="faq" href="faq.html">FAQ</a>
+          <a data-page-link="contact" href="contact.html">상담 연락처</a>
+          <a data-page-link="rest" href="rest.html">쉬어가기</a>
         </nav>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">메뉴 열기</span></button>
       </div>
     </header>
 
     <main class="subpage-main">
-      <section class="subpage-hero">
-        <div class="container subpage-hero__inner">
-          <p class="section-kicker">인권침해 신고</p>
-          <h1>신고 전 확인사항과 접수 절차를 안내합니다</h1>
-          <p>준비사항을 먼저 확인한 뒤 외부 신고 기관으로 안전하게 이동할 수 있도록 구성했습니다.</p>
+      <section class="page-hero">
+        <div class="container page-hero__inner">
+          <p class="eyebrow">REPORT</p>
+          <h1>신고, 준비된 만큼만 적어도 괜찮습니다</h1>
+          <p>
+            상황을 정리하기 어렵다면 가능한 범위만 작성해도 됩니다.<br />
+            접수 후 필요한 안내를 이어서 받을 수 있습니다.
+          </p>
+          <a class="button button--primary" href="https://walla.my/v/a8oq6hDiddJU0hvot35J" target="_blank" rel="noreferrer">우리에게 신고하기</a>
         </div>
       </section>
 
-      <section class="tabs-section">
-        <div class="container tabs-section__inner">
-          <a class="mini-tab" data-page-link="report" href="report.html">인권침해 신고</a>
-          <a class="mini-tab" data-page-link="rights" href="rights.html">학생 권리 안내</a>
-          <a class="mini-tab" data-page-link="faq" href="faq.html">자주 묻는 질문</a>
-          <a class="mini-tab" data-page-link="contact" href="contact.html">상담 연락처</a>
-        </div>
-      </section>
-
-      <section class="info-section">
-        <div class="container page-grid">
+      <section class="section">
+        <div class="container info-grid">
           <article class="info-panel">
-            <p class="section-kicker">신고 절차</p>
-            <h2>3단계로 준비하면 됩니다</h2>
+            <p class="section-kicker">STEP</p>
+            <h2>진행 흐름</h2>
             <ol class="steps">
-              <li>언제, 어디서, 어떤 일이 있었는지 사실관계를 간단히 정리합니다.</li>
-              <li>문자, 사진, 캡처, 진술 등 참고 가능한 자료를 준비합니다.</li>
-              <li>아래 버튼을 눌러 외부 신고 기관 페이지에서 접수를 진행합니다.</li>
+              <li>접수 페이지에서 사건 내용, 발생 일시, 장소, 요청 사항을 작성합니다.</li>
+              <li>담당자가 내용을 확인하고 필요한 추가 정보를 안내합니다.</li>
+              <li>상담, 보호 조치, 외부 기관 연결 등 가능한 방법을 함께 검토합니다.</li>
+              <li>진행 상황과 결과 확인 방법을 안내받습니다.</li>
             </ol>
-            <a class="button button--primary" href="https://walla.my/v/a8oq6hDiddJU0hvot35J" target="_blank" rel="noreferrer">신고 페이지로 이동</a>
           </article>
-
           <article class="info-panel info-panel--soft">
-            <p class="section-kicker">신고 대상 예시</p>
-            <h2>이런 상황이라면 도움을 받을 수 있어요</h2>
-            <div class="bullet-grid">
-              <div>
-                <strong>폭언 및 폭행</strong>
-                <p>교내외에서 발생한 물리적 폭력, 정서적 학대, 협박</p>
-              </div>
-              <div>
-                <strong>차별 및 따돌림</strong>
-                <p>성별, 장애, 외모, 가정환경 등을 이유로 한 차별과 배제</p>
-              </div>
-              <div>
-                <strong>과도한 통제</strong>
-                <p>사생활 침해, 부당한 소지품 검사, 허락 없는 촬영</p>
-              </div>
-              <div>
-                <strong>복지 사각지대</strong>
-                <p>도움이 필요하지만 학교 안에서 적절한 지원을 받지 못한 경우</p>
-              </div>
-            </div>
+            <p class="section-kicker">CHECK</p>
+            <h2>준비하면 좋은 자료</h2>
+            <ul class="plain-list">
+              <li>사건이 발생한 날짜와 장소</li>
+              <li>상황을 설명할 수 있는 메모, 사진, 캡처, 메시지</li>
+              <li>목격자 또는 함께 확인할 수 있는 사람</li>
+              <li>원하는 조치나 우선적으로 필요한 도움</li>
+            </ul>
           </article>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <p class="section-kicker">CASES</p>
+          <h2 class="section-title">이런 일을 신고할 수 있어요</h2>
+          <div class="card-grid">
+            <article class="info-card">
+              <span>Case 01</span>
+              <h2>차별과 혐오 표현</h2>
+              <p>성별, 장애, 국적, 출신, 신념 등을 이유로 한 부당한 대우나 발언을 겪었을 때.</p>
+            </article>
+            <article class="info-card">
+              <span>Case 02</span>
+              <h2>폭언과 괴롭힘</h2>
+              <p>수업, 동아리, 단체 활동 등에서 반복되는 폭언, 따돌림, 강요가 있을 때.</p>
+            </article>
+            <article class="info-card">
+              <span>Case 03</span>
+              <h2>성희롱과 성폭력</h2>
+              <p>원치 않는 신체 접촉, 성적 발언, 불쾌한 요구 등으로 안전이 위협받을 때.</p>
+            </article>
+            <article class="info-card">
+              <span>Case 04</span>
+              <h2>복지와 시설 문제</h2>
+              <p>학습권이나 생활에 영향을 주는 복지 사각지대, 시설 문제를 알리고 싶을 때.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <p class="section-kicker">PRINCIPLE</p>
+          <h2 class="section-title">접수된 내용은 이렇게 다룹니다</h2>
+          <div class="feature-grid">
+            <article>
+              <span>01</span>
+              <h3>비밀 보장</h3>
+              <p>신고 내용과 신원은 처리에 필요한 범위 안에서만 다룹니다.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>불이익 방지</h3>
+              <p>신고를 이유로 불리한 대우를 받지 않도록 함께 살핍니다.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>당사자 중심</h3>
+              <p>처리 방향은 신고한 학생의 의사를 먼저 확인하며 정합니다.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="notice-band">
+        <div class="container notice-band__inner">
+          <p>교내 전문 지원이 필요하다면 한양대학교 인권센터 사이트를 확인하세요.</p>
+          <a href="https://hrc.hanyang.ac.kr/" target="_blank" rel="noreferrer">외부 기관 바로가기</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-layout">
-        <div>
-          <strong>한양대학교 학생인권복지위원회</strong>
-          <p>한양대학교 학생의 안전, 존중, 복지를 위한 정보 제공 홈페이지</p>
-        </div>
-        <div class="footer-links">
-          <a href="tel:010-7938-1870">상담전화 010-7938-1870</a>
-          <a href="mailto:hyustudentscare@gmail.com">hyustudentscare@gmail.com</a>
-          <a href="https://hrc.hanyang.ac.kr/" target="_blank" rel="noreferrer">외부 신고기관 바로가기</a>
-        </div>
+        <div class="footer-brand"><img src="로고_누끼.png" alt="" /><div><strong>학생인권복지위원회</strong><p>한양대학교 학생의 안전, 존중, 복지를 위한 안내 창구</p></div></div>
+        <div class="footer-links"><a href="tel:010-7938-1870">010-7938-1870</a><a href="mailto:hyustudentscare@gmail.com">hyustudentscare@gmail.com</a><a href="https://walla.my/v/a8oq6hDiddJU0hvot35J" target="_blank" rel="noreferrer">신고하기</a></div>
       </div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>

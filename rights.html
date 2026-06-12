@@ -3,135 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>학생 권리 안내 | 학생인권복지위원회</title>
-    <meta name="description" content="학생의 기본 권리와 학교생활에서의 보호 원칙 안내" />
+    <title>학생 권리 | 학생인권복지위원회</title>
+    <meta name="description" content="한양대학교 학생을 위한 기본 권리와 보호 안내" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="rights">
-    <div class="gov-banner">
-      <div class="container gov-banner__inner">
-        <span class="gov-banner__badge">대한민국</span>
-        <p>학생의 존엄과 안전을 함께 지키는 학생인권복지위원회 안내 페이지입니다.</p>
-      </div>
-    </div>
-
     <header class="site-header">
-      <div class="container header-top">
-        <a class="brand" href="index.html" aria-label="학생인권복지위원회 홈">
-          <span class="brand__mark">인</span>
-          <span class="brand__text">
-            <strong>한양대학교 학생인권복지위원회</strong>
-            <small>Student Rights & Welfare Council</small>
-          </span>
-        </a>
-        <div class="header-actions">
-          <a class="header-link" href="rights.html">이용안내</a>
-          <a class="header-link" href="contact.html">상담문의</a>
-          <a class="header-link header-link--strong" href="https://hrc.hanyang.ac.kr/" target="_blank" rel="noreferrer">외부기관</a>
-          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="sr-only">메뉴 열기</span>
-          </button>
-        </div>
-      </div>
-      <div class="container nav-wrap">
-        <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
-          <a href="index.html">위원회 소개</a>
-          <a href="report.html">신고 방법</a>
-          <a href="rights.html">학생 권리</a>
-          <a href="faq.html">자주 묻는 질문</a>
-          <a href="contact.html">상담 연락처</a>
-        </nav>
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="학생인권복지위원회 홈"><img class="brand__logo" src="로고_누끼.png" alt="" /><span class="brand__text"><strong>학생인권복지위원회</strong><small>Hanyang Student Rights & Welfare</small></span></a>
+        <nav id="site-nav" class="site-nav" aria-label="주요 메뉴"><a data-page-link="home" href="index.html">홈</a><a data-page-link="report" href="report.html">신고 안내</a><a data-page-link="rights" href="rights.html">학생 권리</a><a data-page-link="faq" href="faq.html">FAQ</a><a data-page-link="contact" href="contact.html">상담 연락처</a><a data-page-link="rest" href="rest.html">쉬어가기</a></nav>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">메뉴 열기</span></button>
       </div>
     </header>
 
     <main class="subpage-main">
-      <section class="subpage-hero">
-        <div class="container subpage-hero__inner">
-          <p class="section-kicker">학생 권리 안내</p>
-          <h1>학생은 학교 안에서 존중받고 보호받을 권리가 있습니다</h1>
-          <p>학교생활 속 기본적인 권리와 보호 원칙을 쉽게 확인할 수 있도록 정리했습니다.</p>
+      <section class="page-hero">
+        <div class="container page-hero__inner">
+          <p class="eyebrow">RIGHTS</p>
+          <h1>존중받을 권리는 캠퍼스의 기본입니다</h1>
+          <p>
+            학생은 학업과 생활의 모든 과정에서 차별받지 않아야 합니다.<br />
+            안전하게 의견을 말하고, 필요한 지원을 요청할 수 있습니다.
+          </p>
         </div>
       </section>
 
-      <section class="tabs-section">
-        <div class="container tabs-section__inner">
-          <a class="mini-tab" data-page-link="report" href="report.html">인권침해 신고</a>
-          <a class="mini-tab" data-page-link="rights" href="rights.html">학생 권리 안내</a>
-          <a class="mini-tab" data-page-link="faq" href="faq.html">자주 묻는 질문</a>
-          <a class="mini-tab" data-page-link="contact" href="contact.html">상담 연락처</a>
+      <section class="section">
+        <div class="container card-grid">
+          <article class="info-card"><span>01</span><h2>차별받지 않을 권리</h2><p>성별, 장애, 국적, 나이, 학과, 신념 등을 이유로 불리한 대우를 받아서는 안 됩니다.</p></article>
+          <article class="info-card"><span>02</span><h2>안전하게 배울 권리</h2><p>폭언, 폭력, 성희롱, 괴롭힘 없이 학업과 활동을 이어갈 수 있어야 합니다.</p></article>
+          <article class="info-card"><span>03</span><h2>의견을 말할 권리</h2><p>학생은 부당하다고 느낀 상황에 대해 문제를 제기하고 설명을 요구할 수 있습니다.</p></article>
+          <article class="info-card"><span>04</span><h2>도움을 요청할 권리</h2><p>혼자 해결하기 어려운 문제는 상담, 신고, 보호 조치를 요청할 수 있습니다.</p></article>
+          <article class="info-card"><span>05</span><h2>공정하게 평가받을 권리</h2><p>학업과 활동에 대한 평가는 합리적인 기준에 따라 공정하게 이루어져야 합니다.</p></article>
+          <article class="info-card"><span>06</span><h2>사생활을 보호받을 권리</h2><p>개인 정보와 사적인 생활은 본인의 동의 없이 공개되거나 침해되어서는 안 됩니다.</p></article>
         </div>
       </section>
 
-      <section class="info-section">
-        <div class="container page-grid">
+      <section class="section section--tight">
+        <div class="container info-grid">
           <article class="info-panel">
-            <p class="section-kicker">기본 권리</p>
-            <h2>학교에서 보장되어야 할 학생의 권리</h2>
-            <div class="feature-list">
-              <div class="feature-item">
-                <strong>존엄과 인격 존중</strong>
-                <p>학생은 모욕, 비하, 차별 없이 존중받아야 합니다.</p>
-              </div>
-              <div class="feature-item">
-                <strong>안전한 학습 환경</strong>
-                <p>폭력과 위험으로부터 보호받으며 배울 권리가 있습니다.</p>
-              </div>
-              <div class="feature-item">
-                <strong>의사 표현의 자유</strong>
-                <p>학생회 활동, 의견 제시, 건의 과정에서 정당한 표현이 보장되어야 합니다.</p>
-              </div>
-            </div>
+            <p class="section-kicker">WHEN</p>
+            <h2>권리가 침해되었다고 느껴질 때</h2>
+            <ol class="steps">
+              <li>겪은 일을 날짜, 장소, 상황 중심으로 짧게 기록해 둡니다.</li>
+              <li>남아 있는 메시지, 사진, 자료를 안전한 곳에 보관합니다.</li>
+              <li>믿을 수 있는 사람이나 상담 창구에 상황을 알립니다.</li>
+              <li>신고 안내 페이지에서 접수 절차를 확인합니다.</li>
+            </ol>
           </article>
-
           <article class="info-panel info-panel--soft">
-            <p class="section-kicker">생활 속 사례</p>
-            <h2>이럴 때 학생 권리를 떠올려 보세요</h2>
-            <div class="bullet-grid">
-              <div>
-                <strong>사생활 보호</strong>
-                <p>휴대폰 검사, 개인 소지품 확인 등은 정당한 기준과 절차가 필요합니다.</p>
-              </div>
-              <div>
-                <strong>차별 금지</strong>
-                <p>성별, 성적, 외모, 장애, 문화적 배경 등을 이유로 불이익을 받아서는 안 됩니다.</p>
-              </div>
-              <div>
-                <strong>참여 보장</strong>
-                <p>학생 자치 활동과 학교 의사결정 과정에서 의견을 낼 수 있어야 합니다.</p>
-              </div>
-              <div>
-                <strong>복지 지원</strong>
-                <p>심리, 경제, 생활 지원이 필요한 학생은 적절한 도움을 요청할 수 있습니다.</p>
-              </div>
-            </div>
+            <p class="section-kicker">REMEMBER</p>
+            <h2>기억해 주세요</h2>
+            <ul class="plain-list">
+              <li>불편함을 느꼈다면 그 자체로 살펴볼 이유가 됩니다.</li>
+              <li>판단이 서지 않아도 먼저 문의할 수 있습니다.</li>
+              <li>신고와 상담은 언제든 중단하거나 방향을 바꿀 수 있습니다.</li>
+              <li>당신의 잘못이 아닙니다. 도움을 요청하는 것은 권리입니다.</li>
+            </ul>
           </article>
+        </div>
+      </section>
+
+      <section class="notice-band">
+        <div class="container notice-band__inner">
+          <p>권리 침해가 의심된다면 신고 안내 페이지에서 절차를 확인하세요.</p>
+          <a href="report.html">신고 안내 보기</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-layout">
-        <div>
-          <strong>한양대학교 학생인권복지위원회</strong>
-          <p>한양대학교 학생의 안전, 존중, 복지를 위한 정보 제공 홈페이지</p>
-        </div>
-        <div class="footer-links">
-          <a href="tel:010-7938-1870">상담전화 010-7938-1870</a>
-          <a href="mailto:hyustudentscare@gmail.com">hyustudentscare@gmail.com</a>
-            <a href="https://hrc.hanyang.ac.kr/" target="_blank" rel="noreferrer">외부 신고기관 바로가기</a>
-          </div>
+        <div class="footer-brand"><img src="로고_누끼.png" alt="" /><div><strong>학생인권복지위원회</strong><p>한양대학교 학생의 안전, 존중, 복지를 위한 안내 창구</p></div></div>
+        <div class="footer-links"><a href="tel:010-7938-1870">010-7938-1870</a><a href="mailto:hyustudentscare@gmail.com">hyustudentscare@gmail.com</a><a href="https://walla.my/v/a8oq6hDiddJU0hvot35J" target="_blank" rel="noreferrer">신고하기</a></div>
       </div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
