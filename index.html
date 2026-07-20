@@ -20,7 +20,7 @@
     <header class="site-header">
       <div class="header-shell">
         <a class="brand" href="index.html" aria-label="학생인권복지위원회 홈">
-          <img class="brand__logo" src="로고_누끼.png" alt="" />
+          <img class="brand__logo" src="assets/images/로고_누끼.png" alt="" />
           <span class="brand__text">
             <strong>학생인권복지위원회</strong>
             <small>Hanyang Student Rights & Welfare</small>
@@ -29,11 +29,11 @@
 
         <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
           <a data-page-link="home" href="index.html">홈</a>
-          <a data-page-link="report" href="report.html">신고 안내</a>
-          <a data-page-link="rights" href="rights.html">학생 권리</a>
-          <a data-page-link="faq" href="faq.html">FAQ</a>
-          <a data-page-link="contact" href="contact.html">상담 연락처</a>
-          <a data-page-link="rest" href="rest.html">쉬어가기</a>
+          <a data-page-link="report" href="pages/report.html">신고 안내</a>
+          <a data-page-link="rights" href="pages/rights.html">학생 권리</a>
+          <a data-page-link="faq" href="pages/faq.html">FAQ</a>
+          <a data-page-link="contact" href="pages/contact.html">상담 연락처</a>
+          <a data-page-link="rest" href="pages/rest.html">쉬어가기</a>
         </nav>
 
         <a class="header-cta" href="https://walla.my/v/a8oq6hDiddJU0hvot35J" target="_blank" rel="noreferrer">
@@ -118,7 +118,7 @@
               </div>
               <div class="journal-page journal-page--right">
                 <p class="week-label">WEEK 03</p>
-                <img src="로고_누끼.png" alt="학생인권복지위원회 로고" />
+                <img src="assets/images/로고_누끼.png" alt="학생인권복지위원회 로고" />
                 <h2>안전한 연결을 위한 작은 안내서</h2>
                 <div class="page-stripes" aria-hidden="true"></div>
               </div>
@@ -187,25 +187,25 @@
           <p class="section-kicker">MENU</p>
           <h2 class="section-title">필요한 정보로 바로 이동하세요</h2>
           <div class="link-grid">
-            <a class="link-card" href="report.html">
+            <a class="link-card" href="pages/report.html">
               <span>Report</span>
               <h3>신고 안내</h3>
               <p>접수 방법과 진행 흐름, 준비하면 좋은 자료를 확인합니다.</p>
               <strong>바로가기</strong>
             </a>
-            <a class="link-card" href="rights.html">
+            <a class="link-card" href="pages/rights.html">
               <span>Rights</span>
               <h3>학생 권리</h3>
               <p>캠퍼스에서 보장받아야 할 기본 권리를 정리했습니다.</p>
               <strong>바로가기</strong>
             </a>
-            <a class="link-card" href="faq.html">
+            <a class="link-card" href="pages/faq.html">
               <span>FAQ</span>
               <h3>자주 묻는 질문</h3>
               <p>익명 신고, 증거, 처리 기간 등 궁금한 점을 모았습니다.</p>
               <strong>바로가기</strong>
             </a>
-            <a class="link-card" href="contact.html">
+            <a class="link-card" href="pages/contact.html">
               <span>Contact</span>
               <h3>상담 연락처</h3>
               <p>전화, 이메일, 접수 페이지 중 편한 채널을 고르세요.</p>
@@ -226,7 +226,7 @@
     <footer class="site-footer">
       <div class="container footer-layout">
         <div class="footer-brand">
-          <img src="로고_누끼.png" alt="" />
+          <img src="assets/images/로고_누끼.png" alt="" />
           <div>
             <strong>학생인권복지위원회</strong>
             <p>한양대학교 학생의 안전, 존중, 복지를 위한 안내 창구</p>
@@ -239,6 +239,20 @@
         </div>
       </div>
     </footer>
+
+    <div class="bus-popup" id="bus-popup" role="dialog" aria-modal="true" aria-labelledby="bus-popup-title" hidden>
+      <div class="bus-popup__backdrop" data-bus-popup-close></div>
+      <div class="bus-popup__dialog">
+        <h2 id="bus-popup-title" class="sr-only">귀향버스 신청 안내</h2>
+        <a class="bus-popup__link" href="https://forms.gle/DRJzhURJRgSyZ5RUA" target="_blank" rel="noreferrer" aria-label="귀향버스 신청 폼 열기">
+          <img src="assets/images/귀향버스.png" alt="귀향버스 신청 안내. 클릭하여 신청하기" />
+        </a>
+        <div class="bus-popup__actions">
+          <button class="bus-popup__hide-today" type="button" data-bus-popup-hide>하루동안 보지 않기</button>
+          <button class="bus-popup__close" type="button" data-bus-popup-close>닫기</button>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

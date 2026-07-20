@@ -16,6 +16,43 @@ document.querySelectorAll("[data-page-link]").forEach((link) => {
   }
 });
 
+const busPopup = document.querySelector("#bus-popup");
+const busPopupStorageKey = "bus-popup-hidden-until";
+
+function closeBusPopup() {
+  if (!busPopup) return;
+  busPopup.hidden = true;
+}
+
+function isBusPopupHiddenToday() {
+  try {
+    return Number(localStorage.getItem(busPopupStorageKey)) > Date.now();
+  } catch {
+    return false;
+  }
+}
+
+if (busPopup && !isBusPopupHiddenToday()) {
+  busPopup.hidden = false;
+
+  busPopup.querySelectorAll("[data-bus-popup-close]").forEach((button) => {
+    button.addEventListener("click", closeBusPopup);
+  });
+
+  busPopup.querySelector("[data-bus-popup-hide]")?.addEventListener("click", () => {
+    try {
+      localStorage.setItem(busPopupStorageKey, String(Date.now() + 24 * 60 * 60 * 1000));
+    } catch {
+      // Storage can be unavailable in private browsing; closing still works.
+    }
+    closeBusPopup();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeBusPopup();
+  });
+}
+
 const gameTabs = document.querySelectorAll("[data-game-tab]");
 const gamePanels = document.querySelectorAll("[data-game-panel]");
 
