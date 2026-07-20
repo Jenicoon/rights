@@ -18,6 +18,7 @@ document.querySelectorAll("[data-page-link]").forEach((link) => {
 
 const busPopup = document.querySelector("#bus-popup");
 const busPopupStorageKey = "bus-popup-hidden-until";
+const busPopupEndsAt = new Date("2026-07-26T23:59:59+09:00").getTime();
 
 function closeBusPopup() {
   if (!busPopup) return;
@@ -32,7 +33,7 @@ function isBusPopupHiddenToday() {
   }
 }
 
-if (busPopup && !isBusPopupHiddenToday()) {
+if (busPopup && Date.now() <= busPopupEndsAt && !isBusPopupHiddenToday()) {
   busPopup.hidden = false;
 
   busPopup.querySelectorAll("[data-bus-popup-close]").forEach((button) => {
